@@ -1,3 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Test2");
-Console.WriteLine("Test3");
+﻿using bulls_and_cows_game;
+class Program
+{
+
+    static void Main()
+    {
+        
+        for (int i = 0; i < 16; i++)
+        {
+        
+        Game game = new Game();
+
+        Console.WriteLine(game.secretCode);
+        }
+    }
+}
