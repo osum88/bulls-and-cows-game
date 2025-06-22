@@ -5,12 +5,13 @@ class Program
     static void Main()
     {
         
-        for (int i = 0; i < 16; i++)
-        {
-        
         Game game = new Game();
 
-        Console.WriteLine(game.secretCode);
+        while (true)
+        {
+            string guessResult = Console.ReadLine();
+ 
+            game.MakeGuess(guessResult.ToString());
         }
     }
 }
